@@ -4,7 +4,8 @@
     <div class="boxes">
       <div class="box box1">
         <div class="box-content">
-          <p class= "uvnum">{{ allItems.length > 0 ? allItems[0] : '' }}</p>
+          <p class= "uvnum">{{ uvRating }}</p>
+          
         <p class="uvlevel-msg" :style="{ color: uvLevelColor }">{{ uvLevelMessage }}</p>
         </div>
 
@@ -34,7 +35,7 @@ export default {
   },
   methods: {
     updateItems(items) {
-      this.allItems = items;
+      this.uvRating= items;
     }
   },
   computed:{

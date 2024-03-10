@@ -82,7 +82,7 @@ export default {
   name: "NavBar",
   mounted() {
     // Simulating fetching data or any logic to populate allItems
-    this.$emit('update-items', this.allItems);
+    this.$emit('update-items', this.responseData);
   },
   components: {
     CollapseTransition,
@@ -111,7 +111,7 @@ export default {
       searchQuery: "",
       searchResults: [],  // to hold the filtered results
       allItems: ['Alice', 'Bob', 'Charlie', 'David', 'EvA', 'Frank'], // this should be your array of items to search from
-      responseData: null,
+      responseData: 11,
   };
 },
 
